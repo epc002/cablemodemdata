@@ -72,25 +72,17 @@ While the parsing parameters in the capture script are specific to an Arris SB61
 <br>
 <br>
 
-A typical parse sequence in the script performs this sequence:
+A typical parse sequence in the script performs this sequence on the lynx-captured dump file:
 <br>
 <ul>
-<li> add a timestamp to a temp file </li>
-<li> on the captured data file, use "sed" to trim to a range of target line numbers:   sed -n '23,38 p'  </li>
-<li> "grep" for lines with a target text identifier: grep dBmV </li>
-<li> use "sed" to shrink multiple whitespace to one: sed 's/   */ /g' </li>
-<li> use "cut" with a whitespace delimiter and extract the target field of numerical data: cut -d" " -f 10 </li>
-<li> use "sed" to transpose the extracted data into a single csv line: sed -e :a -e '/$/N; s/\n/,/; ta'  </li>
-<li> append the result to the target cumulative csv file </li>
+<li> use "sed" to trim to a target range of line numbers:  <i><b> sed -n '23,38 p' </i></b> </li>
+<li> "grep" for lines with a target text identifier: <i><b> grep dBmV </i></b> </li>
+<li> use "sed" to shrink multiple whitespace to one: <i><b> sed 's/   */ /g' </i></b> </li>
+<li> use "cut" with a whitespace delimiter and extract the target field of numerical data: <i><b> cut -d" " -f 10 </i></b> </li>
+<li> use "sed" to transpose the extracted data into a single csv line: <i><b> sed -e :a -e '/$/N; s/\n/,/; ta'  </i></b> </li>
+<li> append the timestamped result to the target cumulative csv file </li>
 </ul>
-<br>
-<br>
-```html
-cat $TEMPMASTER | sed -n '23,38 p' | grep dBmV | sed 's/   */ /g' | cut -d" " -f 10 >> $TEMPFILE
-#
-# use sed to move the content from all lines to the first line, separate with commas, and append to target csv file
-sed -e :a -e '/$/N; s/\n/,/; ta' $TEMPFILE >>  $MYDIR/SNR-Levels.csv
-```
+
 <br>
 <br>
 
