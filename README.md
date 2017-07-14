@@ -24,14 +24,14 @@ Record statistics from an Arris SB6183 cable modem, and plot the results in real
 <li>A local web server(optional) running on the linux instance</li>
 </ul>
 
-<b>Main operational files:</b><br>
+<b>Operational files:</b><br>
 <ul>
 <li>cableModemCapture-SB6183.sh  (typically run every 5 minutes via cron)</li>
 <li>index.html</li>
 <li>dygraph-combined.js</li>
 </ul>
 
-<b>Three running csv data files are appended to every time the script is run:</b><p>
+<b>Data files: three running csv data files are appended to every time the script is run:</b><p>
 <ul>
 <li>DownPowerLevels.csv </li>
 <li>SNR-Levels.csv</li>
