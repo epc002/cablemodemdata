@@ -36,7 +36,7 @@ Record statistics from an Arris SB6183 cable modem, and plot the results in real
 <li>crontab entry</li>
 </ul>
 
-<b>Data files: three running csv data files are appended to every time the script is run:</b><p>
+<b>Data files: three running csv data files are appended to every time the shell script is run:</b><p>
 <ul>
 <li>DownPowerLevels.csv </li>
 <li>SNR-Levels.csv</li>
