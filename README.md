@@ -62,7 +62,7 @@ example crontab -l (single line):<br>
 
 While the parsing parameters in the capture script are specific to an Arris SB6183 cable modem, they can easily be modified for other modems/devices that can produce a repeatable pattern of data via a URI.  To do that, use lynx to dump a text file of the target device data.  Then use an appropriate editor (e.g. notepad++) to determine the line numbers and field identifiers of the target data, and then adjust the parsing parameters in the capture script.
 <br>
-Note that running a web server is only needed if you want to view the plots from any browser on your lan(preferred) , but you could just view the plots using firefox pointing to the index.html file. (note that the non-web server method doesn’t work with Chrome browser because it disallows cross origin requests)
+Note that running a web server is only needed if you want to view the plots from a browser on your lan(preferred) , but you could just view the plots using firefox pointing to the index.html file. (note that the non-web server method doesn’t work with Chrome browser because it disallows cross origin requests)
 
 <br>
 Range selectors and rolling average entries are available in the graphs (see index.html).
@@ -71,5 +71,5 @@ Rolling averages use a default of 10.
 <br>
 <p>
 <b>
-<a href="https://epc002.000webhostapp.com/SB6183-logs/index.html"> Here's example web-served output of this methodology</a>  , try out the rolling average entries, and use the range selector bars under each graph to move around the timeline
+<a href="https://epc002.000webhostapp.com/SB6183-logs/index.html"> Here's example web-served output of this method</a>  , try out the rolling average entries, and use the range selector bars under each graph to move around the timeline
 </b>
