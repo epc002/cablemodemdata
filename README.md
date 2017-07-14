@@ -78,5 +78,5 @@ Rolling averages use a default of 10.
 <br>
 <p>
 <b>
-<a href="https://epc002.000webhostapp.com/SB6183-logs/index.html"> Here's example web-served output of this method</a>  , try out the rolling average entries, and use the range selector bars under each graph to move around the timeline
+<a href="https://epc002.000webhostapp.com/SB6183-logs/index.html"> Here's example web-served output of this method</a>  , try out the rolling average entries, and use the range selector bars under each graph to move around and zoom in the timeline
 </b>
