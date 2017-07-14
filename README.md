@@ -103,5 +103,5 @@ Try out the rolling average entries, and use the range selector bars under each 
 </b>
 
 
-<iframe src="./index.html"></iframe>
+<a href="https://rawgit.com/epc002/cablemodemdata/master/index.html"> <img src="https://github.com/epc002/cablemodemdata/blob/master/misc/example-graphs.png" https://rawgit.com/epc002/cablemodemdata/master/index.html"> Select this for a live dygraph using example files within this repository </a>
 
