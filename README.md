@@ -9,6 +9,8 @@
 <p>
 <a href="https://rawgit.com/epc002/cablemodemdata/master/index.html" target="_blank"> live dygraph using example files> </a>
 <p>
+[link] (https://rawgit.com/epc002/cablemodemdata/master/index.html) {:target="_blank"} live dygraph using example files
+<p>
 <b>The Goal:</b><br>
 Record statistics from an Arris SB6183 cable modem, and plot the results in realtime.<br>
 <p>
