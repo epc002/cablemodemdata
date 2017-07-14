@@ -18,7 +18,7 @@ Record statistics from an Arris SB6183 cable modem, and plot the results in real
 <b>Requirements/Dependencies:</b><br>
 <ul>
 <li>An Arris SB6183 cable modem to capture data from</li>
-<li>A linux instance (or linux-like, e.g. <a href="https://cygwin.com">Cygwin</a>)</li>
+<li>A linux instance, or equivalent
 <li>dygraph-combined.js  (ref:  <a href="http://dygraphs.com">Dygraphs</a>
  )</li>
 <li>A local web server (optional)</li>
