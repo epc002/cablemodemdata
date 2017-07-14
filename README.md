@@ -69,5 +69,5 @@ Rolling averages use a default of 10.
 
 <p>
 <b>
-<a href="https://epc002.000webhostapp.com/SB6183-logs/index.html"> Here's example live output of this process</a>
+<a href="https://epc002.000webhostapp.com/SB6183-logs/index.html"> Here's example live output of this process</a>  , try out the rolling average entries, and use the range selector bars under each graph to move around the timeline
 </b>
