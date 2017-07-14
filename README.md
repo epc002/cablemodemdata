@@ -97,7 +97,11 @@ Rolling averages use a default of 10.
 
 <br>
 <h2>
-<a href="https://rawgit.com/epc002/cablemodemdata/master/index.html" target="_blank"> Select this for a live dygraph using example files within this repository </a>
+<a href="https://rawgit.com/epc002/cablemodemdata/master/index.html"> Select this for a live dygraph using example files within this repository </a>
 </H2>
 Try out the rolling average entries, and use the range selector bars under each graph to move around and zoom in the timeline
 </b>
+
+
+<iframe src="https://rawgit.com/epc002/cablemodemdata/master/index.html"></iframe>
+
