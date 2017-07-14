@@ -1,1 +1,69 @@
-# cablemodemdata
+
+<H1> Cable Modem Data, how to record and plot, simplified</H1>
+
+2017-04-13 paul chevalier
+
+<b>The Goal:</b><br>
+Record statistics from an Arris SB6183 cable modem, and plot the results in realtime.<br>
+<p>
+<b>Overview:</b><br>
+<ul>
+<li>Periodically run the cableModemCapture-SB6183.sh shell script via cron.</li>
+<li>Use the lynx text-based web browser to capture data from the cable modem.</li>
+<li>Parse the text data to extract specific numerical data.</li>
+<li>Timestamp the numerical data and append it to running CSV data files.</li>
+<li>Graphic plots of the accumulated data are produced in realtime.</li>
+</ul>
+
+<b>Requirements/Dependencies:</b><br>
+<ul>
+<li>An Arris SB6183 cable modem to capture data from</li>
+<li>A linux instance (or linux-like, e.g. cygwin)</li>
+<li>dygraph-combined.js  (ref:  Dygraphs )</li>
+<li>A local web server (optional)</li>
+</ul>
+
+<b>Main operational files:</b><br>
+<ul>
+<li>cableModemCapture-SB6183.sh  (run every 5 minutes via cron)</li>
+<li>index.html</li>
+<li>dygraph-combined.js</li>
+</ul>
+
+<b>Three running csv data files are appended to every time the script is run:</b><p>
+<ul>
+<li>DownPowerLevels.csv </li>
+<li>SNR-Levels.csv</li>
+<li>UpPowerLevels.csv</li>
+</ul>
+
+The index.html  file references those csv files, and uses dygraphs to produce graphic plots.  
+
+A recommended implementation is to run this off a Raspberry-pi 3 with Raspbian, as it’s useful for portability and low power consumption.  
+<p>
+Example file structure on Raspberry-pi:
+
+/var/www/html
+
+├── dygraph-combined.js<br>
+├── index.html<br>
+├── SB6183<br>
+│   ├── CableModemCapture-SB6183.sh<br>
+│   ├── cronout-stats.txt<br>
+│   ├── DownPowerLevels.csv<br>
+│   ├── SNR-Levels.csv<br>
+│   └── UpPowerLevels.csv<br>
+
+
+example crontab -l (single line):
+0,5,10,15,20,25,30,35,40,45,50,55 * * * *  /bin/bash /var/www/html/SB6183/CableModemCapture-SB6183.sh 2>>  /var/www/html/SB6183/cronout-stats.txt
+<br>
+
+While the parsing parameters in the capture script are specific to an Arris SB6183 cable modem, they can easily be modified for other modems/devices that can produce a repeatable pattern of data via a URI.  To do that, use lynx to dump a text file of the target device data.  Then use an appropriate editor (e.g. notepad++) to determine the line numbers and field identifiers of the target data, and then adjust the parsing parameters in the capture script.
+<br>
+Note that running a web server is only needed if you want to view the plots from any browser on your lan(preferred) , but you could just view the plots using firefox pointing to the index.html file. (note that the non-web server method doesn’t work with Chrome browser because it disallows cross origin requests)
+
+<br>
+Range selectors and rolling average entries are available in the graphs (see index.html).
+Rolling averages use a default of 10.
+
