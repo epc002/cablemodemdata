@@ -82,15 +82,7 @@ A typical parse event in the script performs this piped sequence on the lynx-cap
 
 <br>
 <br>
-
 Note that running a web server is only needed if you intend to view the plots from a browser on your lan(preferred) , but you could just view the plots on the hosting system by pointing firefox to the local index.html file. (note that the non-web server method doesn’t work with Chrome browser because it disallows cross origin requests)
-
-<br>
-Range selectors and rolling average entries are available in the graphs (see index.html).
-Rolling averages use a default of 10.
-<br>
-<br>
-<p>
 
 
 
