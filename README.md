@@ -5,9 +5,9 @@
 
 
 
-<figure>
-  <img src="https://github.com/epc002/cablemodemdata/blob/master/misc/example-graphs.png"  width="100%" height="100%">
-</figure>
+
+<a href="https://rawgit.com/epc002/cablemodemdata/master/index.html"> <img src="./misc/example-graphs.png" alt= "Select this for a live dygraph using example files within this repository"> </a>
+<b> Select this for a live instance using files in this repository. Try out the rolling average entries, and use the range selector bars under each graph to move around and zoom in the timeline</b>
 
 
 <b>The Goal:</b><br>
@@ -95,13 +95,5 @@ Rolling averages use a default of 10.
 <br>
 <p>
 
-<br>
-<h2>
-<a href="https://rawgit.com/epc002/cablemodemdata/master/index.html"> Select this for a live dygraph using example files within this repository </a>
-</H2>
-Try out the rolling average entries, and use the range selector bars under each graph to move around and zoom in the timeline
-</b>
 
-
-<a href="https://rawgit.com/epc002/cablemodemdata/master/index.html"> <img src="./misc/example-graphs.png" alt= "Select this for a live dygraph using example files within this repository"> </a>
 
