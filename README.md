@@ -21,7 +21,7 @@ Record statistics from an Arris SB6183 cable modem, and plot the results in real
 <li>A linux instance, or equivalent
 <li>dygraph-combined.js  (ref:  <a href="http://dygraphs.com">Dygraphs</a>
  )</li>
-<li>A local web server (optional)</li>
+<li>A local web server running on the linux instance(optional)</li>
 </ul>
 
 <b>Main operational files:</b><br>
