@@ -26,7 +26,7 @@ Record statistics from an Arris SB6183 cable modem, and plot the results in real
 
 <b>Main operational files:</b><br>
 <ul>
-<li>cableModemCapture-SB6183.sh  (run every 5 minutes via cron)</li>
+<li>cableModemCapture-SB6183.sh  (typically run every 5 minutes via cron)</li>
 <li>index.html</li>
 <li>dygraph-combined.js</li>
 </ul>
