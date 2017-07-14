@@ -7,10 +7,6 @@
 <b> Select the image to present a live instance using files in this repository. Try out the rolling average entries, and use the range selector bars under each graph to move around and zoom in the timeline</b>
 
 <p>
-<a href="https://rawgit.com/epc002/cablemodemdata/master/index.html" target="_blank"> live dygraph using example files> </a>
-<p>
-[link] (https://rawgit.com/epc002/cablemodemdata/master/index.html) {:target="_blank"} live dygraph using example files
-<p>
 <b>The Goal:</b><br>
 Record statistics from an Arris SB6183 cable modem, and plot the results in realtime.<br>
 <p>
