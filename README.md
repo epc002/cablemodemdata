@@ -64,8 +64,8 @@ Example file structure on Raspberry-pi:
 │   └── UpPowerLevels.csv<br>
 
 
-example crontab -l (single line):<br>
-0,5,10,15,20,25,30,35,40,45,50,55 * * * *  /bin/bash /var/www/html/SB6183/CableModemCapture-SB6183.sh 2>>  /var/www/html/SB6183/cronout-stats.txt
+example crontab -l :<br>
+0,5,10,15,20,25,30,35,40,45,50,55 * * * *  /bin/bash /var/www/html/SB6183/CableModemCapture-SB6183.sh
 <br>
 
 While the parsing parameters in the capture script are specific to an Arris SB6183 cable modem, they can easily be modified for other modems or devices that can produce a repeatable pattern of data via a URI.  To do that, use lynx to dump a text file of the target device data.  Then use an appropriate editor (e.g. notepad++) to determine the line numbers and field identifiers of the target data, and then adjust the parsing parameters in the capture script.
