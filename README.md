@@ -4,7 +4,7 @@
 2017-04-13 paul chevalier
 
 <a href="https://rawgit.com/epc002/cablemodemdata/master/index.html"> <img src="./misc/example-graphs.png" alt= "Select this for a live dygraph using example files within this repository"> </a>
-<b> Select the image above to present a live instance using example data files within this repository. Try out the rolling average entries(lower left of each graph, default=10), and use the range selector bars under each graph to move around and zoom in the timeline. (note that the page auto-refreshes every 5 mnutes)</b>
+<b> Select the image above to present a live instance using example data files within this repository. Try out the rolling average entries(lower left of each graph, default=10), and use the range selector bars under each graph to zoom in and move around the timeline. (note that the page auto-refreshes every 5 mnutes)</b>
 _____
 <p>
 <b>The Goal:</b><br>
