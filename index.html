@@ -12,11 +12,9 @@ purpose: display graphs of csv datasets from cable modem logging
 
 <link rel="stylesheet" href="dygraph.css" />
 
-<!-- "dygraph-extra.js and "jquery-3.2.1.min.js") are optional -->
 <script type="text/javascript"
   src="dygraph-combined.js",
-  src="dygraph-extra.js",
-  src="jquery-3.2.1.min.js"></script>
+  ></script>
 
 </head>
 
@@ -28,7 +26,7 @@ style="width:98%; height:400px;"></div>
 <script type="text/javascript">
   g1 = new Dygraph(
     document.getElementById("downpwr"),
-    "DownPowerLevels.csv", // path to CSV file
+    "./SB6183/DownPowerLevels.csv", // path to CSV file
 
     {
       labelsDivStyles: { border: '1px solid black' },
@@ -51,7 +49,7 @@ style="width:98%; height:400px;"></div>
 <script type="text/javascript">
   g2 = new Dygraph(
     document.getElementById("snr"),
-    "SNR-Levels.csv", // path to CSV file
+    "./SB6183/SNR-Levels.csv", // path to CSV file
     {
       labelsDivStyles: { border: '1px solid black' },
 	  showRangeSelector: true,
@@ -72,7 +70,7 @@ style="width:98%; height:400px;"></div>
 <script type="text/javascript">
   g3 = new Dygraph(
     document.getElementById("uppwr"),
-    "UpPowerLevels.csv", // path to CSV file
+    "./SB6183/UpPowerLevels.csv", // path to CSV file
     {
       labelsDivStyles: { border: '1px solid black' },
 	  showRangeSelector: true,
