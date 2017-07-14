@@ -14,7 +14,7 @@ Record statistics from an Arris SB6183 cable modem, and plot the results in real
 <ul>
 <li>Periodically run the cableModemCapture-SB6183.sh shell script via cron.</li>
 <li>The script uses the lynx text-based web browser to capture data from the cable modem.</li>
-<li>It parses the text data to extract specific numerical data.</li>
+<li>It parses the data to extract target numerical data.</li>
 <li>Then timestamps the numerical data and appends it to running CSV data files.</li>
 <li>Graphic plots of the accumulated data are produced in realtime.</li>
 </ul>
