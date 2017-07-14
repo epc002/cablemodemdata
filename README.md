@@ -73,7 +73,7 @@ A typical parse event in the script performs a similar piped sequence on the lyn
 <ul>
 <li> use sed to trim to a target range of line numbers:  <pre><i><b> sed -n '23,38 p' </i></b></pre> </li>
 <li> use grep to trim to lines that contain a target text identifier: <pre><i><b> grep dBmV </i></b></pre> </li>
-<li> use sed to shrink multiple whitespace to one: <pre><i><b> sed 's/   */ /g' </i></b></pre> </li>
+<li> use sed to shrink multiple whitespace in each line: <pre><i><b> sed 's/   */ /g' </i></b></pre> </li>
 <li> use cut with a whitespace delimiter and extract the target field of numerical data: <pre><i><b> cut -d" " -f 10 </i></b></pre> </li>
 <li> use sed to transpose the extracted data into a single csv line: <pre><i><b> sed -e :a -e '/$/N; s/\n/,/; ta'  </i></b></pre> </li>
 <li> append the timestamped csv line to the target cumulative csv file </li>
