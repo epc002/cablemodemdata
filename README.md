@@ -10,7 +10,7 @@ _____
 <b>The Goal:</b><br>
 Record statistics from an Arris SB6183 cable modem, and plot the results in realtime.<br>
 <p>
-<b>Overview:</b><br>
+<b>Method Overview:</b><br>
 <ul>
 <li>Periodically run the cableModemCapture-SB6183.sh shell script via cron.</li>
 <li>The script uses the lynx text-based web browser to capture all data from the cable modem.</li>
