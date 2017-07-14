@@ -70,16 +70,30 @@ example crontab -l :<br>
 
 While the parsing parameters in the capture script are specific to an Arris SB6183 cable modem, they can easily be modified for other modems or devices that can produce a repeatable pattern of data via a URI.  To do that, use lynx to dump a text file of the target device data.  Then open the text file in an appropriate editor (e.g. notepad++) to easily determine the line numbers and field identifiers of the target data, and then adjust the parsing parameters in the capture script.
 <br>
+<br>
+
 A typical parse sequence in the script performs this sequence:
 <br>
 <ul>
-<li> trim to range of target line numbers, </li>
-<li> grep for lines with target identifier, </li>
-<li> use sed to shrink multiple whitespace to one, </li>
-<li> cut using a whitespace delimiter to the target field, </li>
-<li> append to temp file </li>
+<li> add a timestamp to a temp file </li>
+<li> on the captured data file, use "sed" to trim to a range of target line numbers:   sed -n '23,38 p'  </li>
+<li> "grep" for lines with a target text identifier: grep dBmV </li>
+<li> use "sed" to shrink multiple whitespace to one: sed 's/   */ /g' </li>
+<li> use "cut" with a whitespace delimiter and extract the target field of numerical data: cut -d" " -f 10 </li>
+<li> use "sed" to transpose the extracted data into a single csv line: sed -e :a -e '/$/N; s/\n/,/; ta'  </li>
+<li> append the result to the target cumulative csv file </li>
 </ul>
 <br>
+<br>
+```html
+cat $TEMPMASTER | sed -n '23,38 p' | grep dBmV | sed 's/   */ /g' | cut -d" " -f 10 >> $TEMPFILE
+#
+# use sed to move the content from all lines to the first line, separate with commas, and append to target csv file
+sed -e :a -e '/$/N; s/\n/,/; ta' $TEMPFILE >>  $MYDIR/SNR-Levels.csv
+```
+<br>
+<br>
+
 Note that running a web server is only needed if you want to view the plots from a browser on your lan(preferred) , but you could just view the plots using firefox pointing to the index.html file. (note that the non-web server method doesn’t work with Chrome browser because it disallows cross origin requests)
 
 <br>
