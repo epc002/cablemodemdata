@@ -67,3 +67,7 @@ Note that running a web server is only needed if you want to view the plots from
 Range selectors and rolling average entries are available in the graphs (see index.html).
 Rolling averages use a default of 10.
 
+<p>
+<b>
+<a href="https://epc002.000webhostapp.com/SB6183-logs/index.html"> Here's example live output of this process</a>
+</b>
