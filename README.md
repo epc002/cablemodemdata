@@ -56,7 +56,7 @@ Example file structure on Raspberry-pi:
 │   └── UpPowerLevels.csv<br>
 
 
-example crontab -l (single line):
+example crontab -l (single line):<br>
 0,5,10,15,20,25,30,35,40,45,50,55 * * * *  /bin/bash /var/www/html/SB6183/CableModemCapture-SB6183.sh 2>>  /var/www/html/SB6183/cronout-stats.txt
 <br>
 
