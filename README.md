@@ -55,7 +55,6 @@ Example file structure on Raspberry-pi:
 ├── index.html<br>
 ├── SB6183<br>
 │   ├── CableModemCapture-SB6183.sh<br>
-│   ├── cronout-stats.txt<br>
 │   ├── DownPowerLevels.csv<br>
 │   ├── SNR-Levels.csv<br>
 │   └── UpPowerLevels.csv<br>
