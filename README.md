@@ -94,6 +94,11 @@ Rolling averages use a default of 10.
 <br>
 <br>
 <p>
-<b>
-<a href="https://epc002.000webhostapp.com/SB6183-logs/index.html"> Here's example web-served output of this method</a>  , try out the rolling average entries, and use the range selector bars under each graph to move around and zoom in the timeline
+
+<br>
+<h2>
+<a href="https://rawgit.com/epc002/cablemodemdata/master/index.html"> Select this for a live dygraph using example files within this repository </a>
+</H2>
+<br>
+try out the rolling average entries, and use the range selector bars under each graph to move around and zoom in the timeline
 </b>
