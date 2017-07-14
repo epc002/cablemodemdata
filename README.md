@@ -103,5 +103,5 @@ Try out the rolling average entries, and use the range selector bars under each 
 </b>
 
 
-<iframe src="https://rawgit.com/epc002/cablemodemdata/master/index.html"></iframe>
+<iframe src="./index.html"></iframe>
 
