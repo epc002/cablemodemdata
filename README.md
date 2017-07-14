@@ -3,6 +3,13 @@
 
 2017-04-13 paul chevalier
 
+
+
+<figure>
+  <img src="https://github.com/epc002/cablemodemdata/blob/master/example-graphs.png"  width="100%" height="100%">
+</figure>
+
+
 <b>The Goal:</b><br>
 Record statistics from an Arris SB6183 cable modem, and plot the results in realtime.<br>
 <p>
