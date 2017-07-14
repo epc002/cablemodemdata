@@ -36,6 +36,7 @@ Record statistics from an Arris SB6183 cable modem, and plot the results in real
 <li>cableModemCapture-SB6183.sh  (typically run every 5 minutes via cron)</li>
 <li>index.html</li>
 <li>dygraph-combined.js</li>
+<li>crontab entry</li>
 </ul>
 
 <b>Data files: three running csv data files are appended to every time the script is run:</b><p>
