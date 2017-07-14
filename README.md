@@ -82,7 +82,7 @@ A typical parse event in the script performs a similar piped sequence on the lyn
 
 <br>
 <br>
-Note that running a web server is only needed if you intend to view the plots from a browser from any system on your lan(preferred) , but you could just view the plots on the hosting system by pointing firefox to the local index.html file. (note that the non-web server method doesn’t work with Chrome browser because it disallows cross origin requests)
+Note that running a web server is only needed if you intend to view the plots via a browser from any system on your lan(preferred) , but you could just view the plots on the hosting system by pointing firefox to the local index.html file. (note that the non-web server method doesn’t work with Chrome browser because it disallows cross origin requests)
 
 
 
