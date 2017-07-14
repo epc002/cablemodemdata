@@ -80,7 +80,7 @@ A typical parse sequence in the script performs this sequence on the lynx-captur
 <li> use sed to shrink multiple whitespace to one: <pre><i><b> sed 's/   */ /g' </i></b></pre> </li>
 <li> use cut with a whitespace delimiter and extract the target field of numerical data: <pre><i><b> cut -d" " -f 10 </i></b></pre> </li>
 <li> use sed to transpose the extracted data into a single csv line: <pre><i><b> sed -e :a -e '/$/N; s/\n/,/; ta'  </i></b></pre> </li>
-<li> append the timestamped result to the target cumulative csv file </li>
+<li> append the timestamped csv line to the target cumulative csv file </li>
 </ul>
 
 <br>
