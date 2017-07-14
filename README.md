@@ -6,7 +6,7 @@
 
 
 <figure>
-  <img src="https://github.com/epc002/cablemodemdata/blob/master/example-graphs.png"  width="100%" height="100%">
+  <img src="https://github.com/epc002/cablemodemdata/blob/master/misc/example-graphs.png"  width="100%" height="100%">
 </figure>
 
 
