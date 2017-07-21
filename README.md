@@ -45,7 +45,7 @@ Record statistics from an Arris SB6183 cable modem, and plot the results in real
 
 The index.html  file references those csv files, and uses dygraphs to produce graphic plots.  
 
-A recommended implementation is to run this off a Raspberry-pi, as it’s useful for portability and low power consumption. (most any host system can use this method, it only uses a basic shell, lynx, sed, grep, cut, dygraphs, and a scheduler)
+A recommended implementation is to run this off a Raspberry-pi with a small UPS, as it’s useful for portability, persistence, and low power consumption. (most any host system can use this method, it only uses a basic shell, lynx, sed, grep, cut, dygraphs, and a scheduler)
 <p>
 Example file structure on Raspberry-pi:
 
