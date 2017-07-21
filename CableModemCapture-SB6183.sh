@@ -38,6 +38,8 @@ rm -f $TEMPDATE
 #
 # put the current ISO8601 formatted date & time into a temp file
 date +%Y-%m-%d-%H:%M:%S > $TEMPDATE
+# or, if preferred, use UTC:
+# date -u +%Y-%m-%d-%H:%M:%S > $TEMPDATE
 #
 # run lynx against the cable modem status URI, using a width of 100 to avoid line-wrapping, and using the "dump" option to capture all URI content in plain text format. That text data will then be parsed in subsequent operations
 /usr/bin/lynx -width=100 -dump http://192.168.100.1/RgConnect.asp > $TEMPMASTER
