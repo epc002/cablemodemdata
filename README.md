@@ -22,9 +22,8 @@ Persistently capture and record statistics from an Arris SB6183 cable modem, and
 <b>Requirements/Dependencies:</b><br>
 <ul>
 <li>An Arris SB6183 cable modem to capture data from</li>
-<li>A linux instance, or equivalent
-<li>dygraph-combined.js
- )</li>
+<li>A linux instance, or equivalent </li>
+<li>dygraph-combined.js </li>
 <li>A local web server(optional) running on the linux instance</li>
 </ul>
 
