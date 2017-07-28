@@ -16,14 +16,14 @@ Persistently capture and record statistics from an Arris SB6183 cable modem, and
 <li>The script uses the lynx text-based web browser to capture all data from the cable modem.</li>
 <li>It parses the data to extract target numerical data.</li>
 <li>Then timestamps the numerical data and appends it to running CSV data files.</li>
-<li>Graphic plots of the accumulated data are produced in realtime.</li>
+<li>Graphic plots (using dygraphs:  <a href="http://dygraphs.com">Dygraphs</a> ) of the accumulated data are produced in realtime.</li>
 </ul>
 
 <b>Requirements/Dependencies:</b><br>
 <ul>
 <li>An Arris SB6183 cable modem to capture data from</li>
 <li>A linux instance, or equivalent
-<li>dygraph-combined.js  (ref:  <a href="http://dygraphs.com">Dygraphs</a>
+<li>dygraph-combined.js
  )</li>
 <li>A local web server(optional) running on the linux instance</li>
 </ul>
