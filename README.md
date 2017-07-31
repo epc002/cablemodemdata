@@ -8,7 +8,7 @@
 _____
 <p>
 <b>The Goal:</b><br>
-Persistently capture and record statistics from an Arris SB6183 cable modem, and plot historical results in realtime.<br>
+Persistently capture and record statistics from an Arris SB6183 cable modem, and display historical plots in dygraphs.<br>
 <p>
 <b>Method Overview:</b><br>
 <ul>
