@@ -67,7 +67,7 @@ While the parsing parameters in the capture script are specific to an Arris SB61
 <br>
 <br>
 
-A typical parse event in the script performs a sequential sequence of operations against the lynx-captured dump file similar to this:
+A typical parse event in the script performs a piped sequence of operations against the lynx-captured dump file similar to this:
 <br>
 <ul>
 <li> use sed to trim to a target range of line numbers:  <pre><i><b> sed -n '23,38 p' </i></b></pre> </li>
